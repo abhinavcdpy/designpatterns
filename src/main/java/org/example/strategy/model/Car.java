@@ -2,16 +2,9 @@ package org.example.strategy.model;
 
 import org.example.strategy.strategies.MoveStrategy;
 
-public class Car implements Vehicle {
-    private final MoveStrategy moveStrategy;
-
+public class Car extends Vehicle {
     //Constructor Injection
     public Car(MoveStrategy moveStrategy) {
-        this.moveStrategy = moveStrategy;
-    }
-
-    @Override
-    public void move() {
-        moveStrategy.move(this);
+        super(moveStrategy);
     }
 }
