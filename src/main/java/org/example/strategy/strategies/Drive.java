@@ -1,6 +1,6 @@
 package org.example.strategy.strategies;
 
-import org.example.strategy.Vehicle;
+import org.example.strategy.model.Vehicle;
 
 public class Drive implements MoveStrategy{
     @Override

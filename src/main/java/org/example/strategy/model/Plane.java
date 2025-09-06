@@ -1,12 +1,12 @@
-package org.example.strategy;
+package org.example.strategy.model;
 
 import org.example.strategy.strategies.MoveStrategy;
 
-public class Bus implements Vehicle{
+public class Plane implements Vehicle {
     private final MoveStrategy moveStrategy;
 
     //Constructor Injection
-    public Bus(MoveStrategy moveStrategy) {
+    public Plane(MoveStrategy moveStrategy) {
         this.moveStrategy = moveStrategy;
     }
 

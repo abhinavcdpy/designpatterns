@@ -8,6 +8,9 @@ import org.example.observer.observers.SmsAlertObserverImpl;
 
 public class ObserverPatternRunner {
     public static void main(String[] args) {
+        /**
+         * NOTE: See how emailObserver gets the stock (via constructor injection) instead of directly taking it in as int parameter
+         */
         StockObservable iPhoneStockObservable = new IphoneObservableImpl(2);
 
         NotificationAlertObserver emailObserver = new EmailAlertObserverImpl(iPhoneStockObservable);

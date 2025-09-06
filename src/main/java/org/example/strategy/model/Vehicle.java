@@ -1,6 +1,4 @@
-package org.example.strategy;
-
-import org.example.strategy.strategies.MoveStrategy;
+package org.example.strategy.model;
 
 public interface Vehicle {
     //Car and Bus are driven, Plane is flown
